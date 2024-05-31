@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sepet</title>
+</head>
+<body>
+<h1>Sepetinizdeki ürünler</h1>
+
+<table>
+    <tr>
+        <th>Ürün Adı</th>
+        <th>Fiyat</th>
+        <th>Tip</th>
+        <th>FOtoğraf</th>
+    </tr>
+    <% cartItems.forEach(function(product) { %>
+        <tr>
+            <td><%= product.name %></td>
+            <td><%= product.price %></td>
+            <td><%= product.type %></td>
+            <td><img style="width: 400px; height: auto;" src="/uploads/<%= product.photo %>" alt=""></td>
+            <td>
+            <form action="/cart/delete/<%= product._id %>" method="POST">
+                <input type="hidden" name="productId" value="<%= product._id %>">
+                <button type="submit">Sepetten Sil</button>
+            </form>
+            </td>
+
+        </tr>
+    <% }) %>
+</table>
+
+<p>Sepet Tutarı: <%= totalAmount %> TL</p>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>RÇPATİSSERİE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="/images/icons/pembepin.png"/>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/fonts/linearicons-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/vendor/slick/slick.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/vendor/MagnificPopup/magnific-popup.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/vendor/perfect-scrollbar/perfect-scrollbar.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/css/util.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <!--===============================================================================================-->
+</head>
+<body class="ecommerce">
+
+<!-- Header -->
+<header>
+    <!-- Header desktop -->
+    <div class="container-menu-desktop">
+        <!-- Topbar -->
+        <div class="top-bar">
+            <p><a href="/indirim" style="color: white;" >İNDİRİMLİ ÜRÜNLERE GÖZ ATMAK İÇİN LÜTFEN TIKLAYIN </a></p>
+
+        </div>
+
+        <div class="wrap-menu-desktop">
+            <nav class="limiter-menu-desktop container">
+                <!-- Logo desktop -->
+                <a href="/" class="logo">
+                    <img src="/images/icons/berry.png" alt="IMG-LOGO">
+                </a>
+                <!-- Menu desktop -->
+
+                <div class="menu-desktop">
+                    <div>
+                        <ul class="main-menu">
+                            <li class="<%= link == 'home' && 'active-menu' %>">
+                                <a href="/">Anasayfa</a>
+                            </li>
+
+                            <li class="<%= link == 'product' && 'active-menu' %>">
+                                <a href="/product">Ürünler</a>
+                                <ul class="sub-menu">
+                                    <li><a href="/product">Tüm Ürünler</a></li>
+                                    <li><a href="/buyuk">Büyük Boy Pastalar</a></li>
+                                    <li><a href="/kucuk">Küçük Boy Pastalar</a></li>
+                                    <li><a href="/ozel">Özel Tasarım Pastalar</a></li>
+                                    <li><a href="/indirim">İndirimli Pastalar</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="<%= link == 'about' && 'active-menu' %>">
+                                <a href="/about">Hikayemiz</a>
+                            </li>
+
+                            <li class="<%= link == 'contact' && 'active-menu' %>">
+                                <a href="/contact">İletişim</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <!-- Icon header -->
+                <div class="wrap-icon-header flex-w flex-r-m">
+                    <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-modal-search">
+                        <i class="zmdi zmdi-search"></i>
+                    </div>
+
+                    <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11">
+                        <a style="color: black" href="/cart/get"> <i class="zmdi zmdi-shopping-cart"></i></a>
+                    </div>
+
+                    <!-- <a href="#" class="dis-block icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 " >
+                        <i class="zmdi zmdi-favorite-outline"></i>
+                    </a> -->
+
+                    <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11">
+                        <a style="color: #222;" href="/login" class="zmdi zmdi-account-o"></a>
+                    </div>
+
+
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+
+    <!-- Header Mobile -->
+    <div class="wrap-header-mobile">
+        <!-- Button show menu -->
+        <div class="btn-show-menu-mobile hamburger hamburger--squeeze">
+				<span class="hamburger-box">
+					<span class="hamburger-inner"></span>
+				</span>
+        </div>
+        <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-modal-search">
+            <i class="zmdi zmdi-search"></i>
+        </div>
+        <!-- Logo moblie -->
+        <div class="logo-mobile">
+            <a href="index.html"><img src="images/icons/berry.png" alt="IMG-LOGO"></a>
+        </div>
+
+        <!-- Icon header -->
+        <div class="wrap-icon-header flex-w flex-r-m">
+
+
+            <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-cart">
+                <i class="zmdi zmdi-shopping-cart"></i>
+            </div>
+
+            <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11">
+                <a style="color: #222;" href="login.html" class="zmdi zmdi-account-o"></a>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- Menu Mobile -->
+    <div class="menu-mobile">
+        <ul class="topbar-mobile">
+            <li>
+                <div class="left-top-bar" style="color:#f7f7f7"> <a href="product-indirim.html">İNDİRİMLİ ÜRÜNLERE GÖZ ATMAK İÇİN LÜTFEN TIKLAYINIZ</a>
+                </div>
+            </li>
+
+        </ul>
+
+        <ul style="background-color: #d9b38f;" class="main-menu-m">
+            <li>
+                <a href="index.html">Anasayfa</a>
+
+            </li>
+
+            <li>
+                <a href="product.html">Tüm Ürünler</a>
+                <ul class="sub-menu-m">
+                    <li data-filter=".watches" ><a href="product-buyuk.html">Büyük Boy Pastalar</a></li>
+                    <li><a href="product-kucuk.html">Küçük Boy Pastalar</a></li>
+                    <li><a href="product-ozel.html">Özel Tasarım Pastalar</a></li>
+                    <li><a href="product-indirim.html">İndirimli Pastalar</a></li>
+                </ul>
+                <span class="arrow-main-menu-m">
+						<i class="fa fa-angle-right" aria-hidden="true"></i>
+					</span>
+            </li>
+
+            <li>
+                <a href="about.html">Hikayemiz</a>
+            </li>
+
+            <li>
+                <a href="contact.html">İletişim</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Modal Search -->
+    <div class="modal-search-header flex-c-m trans-04 js-hide-modal-search">
+        <div class="container-search-header">
+            <button class="flex-c-m btn-hide-modal-search trans-04 js-hide-modal-search">
+                <img src="images/icons/icon-close2.png" alt="CLOSE">
+            </button>
+
+            <form class="wrap-search-header flex-w p-l-15">
+                <button class="flex-c-m trans-04">
+                    <i class="zmdi zmdi-search"></i>
+                </button>
+                <input class="plh3" type="text" name="search" placeholder="Search...">
+            </form>
+        </div>
+    </div>
+</header>
